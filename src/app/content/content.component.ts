@@ -1,7 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core'
-import { Drink } from '../models/drink.model'
-import { NetworkService } from '../services/network.service'
-import { DrinkLarge } from '../models/drink-large.model'
+import { Component } from '@angular/core'
 
 @Component({
     selector: 'app-content',
@@ -9,6 +6,11 @@ import { DrinkLarge } from '../models/drink-large.model'
     styleUrls: ['./content.component.scss']
   })
 
-  export class ContentComponent {}
+  export class ContentComponent {
+
+    catSelected ($event: any) {
+      console.log($event)
+    }
+  }
 
   

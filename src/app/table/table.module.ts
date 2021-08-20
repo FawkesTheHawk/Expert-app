@@ -12,7 +12,7 @@ import { MatTableModule } from '@angular/material/table';
     TableComponent,
   ],
   imports: [
-    MatTableModule
+    MatTableModule,
   ],
 })
 export class TableModule { }

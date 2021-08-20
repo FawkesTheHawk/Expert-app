@@ -1,16 +1,14 @@
-<mat-selection-list role="list" #categoriesList [(ngModel)]="categories" >
-    <mat-list-option>Ordinary Drink</mat-list-option>
-    <mat-list-option>Cocktail</mat-list-option>
-    <mat-list-option>Milk \/ Float \/ Shake</mat-list-option>
-    <mat-list-option>Other\/Unkown</mat-list-option>
-    <mat-list-option>Cocoa</mat-list-option>
-    <mat-list-option>Shot</mat-list-option>
-    <mat-list-option>Coffee \/ Tea</mat-list-option>
-    <mat-list-option>Hommade Liqueur</mat-list-option>
-    <mat-list-option>Punch \/ Party Drink</mat-list-option>
-    <mat-list-option>Beer</mat-list-option>
-    <mat-list-option>SoftDrink \/ Soda</mat-list-option>
-</mat-selection-list>
-<!-- <p>
-    <button mat-button (buttonClicked)="clickApply(Categories.selectedOptions.selected)">Apply</button>
-</p> -->
+<mat-action-list role="list">
+    <button mat-list-item (click)=c1()>Ordinary Drink</button>
+    <button mat-list-item (click)=c2()>Cocktail</button>
+    <button mat-list-item (click)=c3()>Milk \/ Float \/ Shake</button>
+    <button mat-list-item (click)=c4()>Other\/Unkown</button>
+    <button mat-list-item (click)=c5()>Cocoa</button>
+    <button mat-list-item (click)=c6()>Shot</button>
+    <button mat-list-item (click)=c7()>Coffee \/ Tea</button>
+    <button mat-list-item (click)=c8()>Hommade Liqueur</button>
+    <button mat-list-item (click)=c9()>Punch \/ Party Drink</button>
+    <button mat-list-item (click)=c10()>Beer</button>
+    <button mat-list-item (click)=c11()>SoftDrink \/ Soda</button>
+</mat-action-list>
+
