@@ -14,6 +14,14 @@ import { MatTableModule} from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
+
+import { ContentModule } from './content/content.module';
+import { TableModule } from './table/table.module';
+import { CategorysModule } from './categorys/categorys.module';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +36,12 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
     MatProgressSpinnerModule, 
     MatSortModule,
     MatTableModule,
-    MatInputModule
+    MatInputModule,
+    TableModule,
+    MatGridListModule,
+    CategorysModule,
+    MatListModule,
+    ContentModule,
   ],
   providers: [ 
     NetworkService 

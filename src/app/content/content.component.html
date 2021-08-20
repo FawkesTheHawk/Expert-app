@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <header style="width: 100%; height: 10%;">
+        Cocktails from CocktailDB
+    </header>
+    <body>
+
+
+    <mat-grid-list cols="4" rowHeight="1:4">
+        <mat-grid-tile>
+            <app-categorys (cat)="catSelected($event)"></app-categorys>
+        </mat-grid-tile>
+        <mat-grid-tile colspan=3>
+            <app-table style="width:100%; height: 100%;"></app-table>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+    </body> 
+</html>
+
+
