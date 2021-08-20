@@ -3,6 +3,7 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { Drink } from '../models/drink.model';
+import { DrinkLarge } from '../models/drink-large.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +12,13 @@ import { Drink } from '../models/drink.model';
 export class NetworkService {
   private drinks = 'drinks';
 
+  baseString = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?';
+
   constructor(private http: HttpClient) {}
 
-  getAllDrinks(): Observable<HttpResponse<Drink[]>> {
+  getAllDrinksByCategory(): Observable<HttpResponse<DrinkLarge[]>> {
     return (
-      this.http.get<Drink[]>('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=', {observe: 'response'})
+      this.http.get<DrinkLarge[]>(this.baseString + 's=', {observe: 'response'})
       )
   }
 }
